@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // ESNext 버전으로 index를 생성
+    "module": "ESNext", // CommonJS 버전으로 index를 생성
+    "outDir": "dist", // dist라는 이름의 폴더를 만들고 이에 index파일을 만듦
+    "strict": false, // 엄격모드로 true는 엄격하게 코드의 타입을 검사
+    "moduleDetection": "force", // 코드가 겹쳐도 오류가 뜨지않게 해줌
+    "skipLibCheck": true, // 타입 검사를 생략하게 해줌
+  },
+  "ts-node": { // 터미널 명령어 ts-node src/index.ts 오류 해결
+    "esm": true
+  },
+  "include": ["src"]
+}
